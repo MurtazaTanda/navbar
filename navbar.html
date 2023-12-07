@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <link rel="stylesheet" href="./styles/navbar.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      display: inline;
+    }
+
+    .black {
+      color: black;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .globe {
+      padding-left: 50px;
+    }
+
+    .cred {
+      float: right;
+      padding: 10px;
+      padding-right: 50px;
+    }
+
+    #language {
+      padding: 10px 10px 10px 0px;
+      border: none;
+    }
+
+
+    .tit,
+    .lists {
+      color: white;
+    }
+
+    .tit {
+      font-size: 25px;
+      padding: 10px;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: red;
+      width: 100vw;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .lists ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .lists li {
+      list-style: none;
+    }
+
+    .lists li a {
+      padding: 10px;
+      margin: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .lists li a:hover {
+      background-color: white;
+      border-radius: 25px;
+      color: red;
+    }
+
+    #searchbox {
+      width: 100px;
+      height: 20px;
+      padding-right: 30px;
+      /* border-radius: 5px; */
+      /* border: 1px solid gray; */
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav class="navigation">
+    <div class="credits"> 
+      <p class="globe">🌐</p>
+      <select name="language" id="language">
+        <option value="English" selected>English</option>
+        <option value="French">French</option>
+        <option value="Hindi">Hindi</option>
+      </select>
+      <div class="cred">
+        <p class="black">Contact Us</p>
+        <p class="red">96.80.692.130 | Ouote List</p>
+        <p class="black">(0) | Login</p>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="tit">FASTEST</div>
+      <div class="lists">
+        <ul>
+          <li><a href="#">PRODUCTS</a></li>
+          <li><a href="#">MAINTENANCE</a></li>
+          <li><a href="#">SUPPORT</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li>
+            <input type="text" name="searchbox" id="searchbox" placeholder="🔍Search" />
+          </li>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>
